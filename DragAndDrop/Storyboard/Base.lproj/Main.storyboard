@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QxS-Gt-NoG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Drag & Drop-->
+        <scene sceneID="TxJ-ja-pVr">
+            <objects>
+                <collectionViewController id="RCe-Kb-xNf" customClass="KanbanCollectionViewController" customModule="DragAndDrop" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="LP8-cO-gtx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.83137254901960778" green="0.83137254901960778" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="10" id="nw5-UZ-71O">
+                            <size key="itemSize" width="332" height="540"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="o6b-vU-Yga" customClass="KanbanCollectionViewCell" customModule="DragAndDrop" customModuleProvider="target">
+                                <rect key="frame" x="16" y="117" width="332" height="540"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="332" height="540"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="R1Q-T7-nNL">
+                                            <rect key="frame" x="0.0" y="0.0" width="332" height="540"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <view key="tableHeaderView" contentMode="scaleToFill" id="gMq-bK-K2f">
+                                                <rect key="frame" x="0.0" y="0.0" width="332" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXX-YB-fFD">
+                                                        <rect key="frame" x="16" y="7" width="300" height="30"/>
+                                                        <state key="normal" title="Add"/>
+                                                        <connections>
+                                                            <action selector="addTapped:" destination="o6b-vU-Yga" eventType="touchUpInside" id="UhU-el-kx9"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="tXX-YB-fFD" firstAttribute="centerY" secondItem="gMq-bK-K2f" secondAttribute="centerY" id="E21-nf-sYf"/>
+                                                    <constraint firstItem="tXX-YB-fFD" firstAttribute="leading" secondItem="gMq-bK-K2f" secondAttribute="leading" constant="16" id="Hzn-US-ebz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="tXX-YB-fFD" secondAttribute="trailing" constant="16" id="YrA-69-7ve"/>
+                                                    <constraint firstItem="tXX-YB-fFD" firstAttribute="centerX" secondItem="gMq-bK-K2f" secondAttribute="centerX" id="b5Z-tw-YRZ"/>
+                                                </constraints>
+                                            </view>
+                                            <connections>
+                                                <outlet property="dataSource" destination="o6b-vU-Yga" id="3Cs-QZ-fEm"/>
+                                                <outlet property="delegate" destination="o6b-vU-Yga" id="Njz-yB-Gxu"/>
+                                            </connections>
+                                        </tableView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="R1Q-T7-nNL" firstAttribute="top" secondItem="o6b-vU-Yga" secondAttribute="top" id="XxR-eB-oW5"/>
+                                    <constraint firstAttribute="bottom" secondItem="R1Q-T7-nNL" secondAttribute="bottom" id="eEC-Hp-xtq"/>
+                                    <constraint firstItem="R1Q-T7-nNL" firstAttribute="leading" secondItem="o6b-vU-Yga" secondAttribute="leading" id="fag-OS-8zn"/>
+                                    <constraint firstAttribute="trailing" secondItem="R1Q-T7-nNL" secondAttribute="trailing" id="tBZ-xp-vEK"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="tableView" destination="R1Q-T7-nNL" id="7nM-jp-usy"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="RCe-Kb-xNf" id="nsi-0y-ZU1"/>
+                            <outlet property="delegate" destination="RCe-Kb-xNf" id="YeU-xB-yUJ"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Drag &amp; Drop" id="rUz-ro-cLP"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m5f-05-fur" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-160.86956521739131" y="81.696428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="o6m-b2-bZK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QxS-Gt-NoG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="del-md-eW0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RCe-Kb-xNf" kind="relationship" relationship="rootViewController" id="nbB-aR-3g3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZNn-Pn-TFa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1071.0144927536232" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+</document>

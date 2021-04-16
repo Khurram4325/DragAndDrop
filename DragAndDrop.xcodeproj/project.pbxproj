@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		21357F9C2602136B006E3596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21357F9B2602136B006E3596 /* AppDelegate.swift */; };
 		21357F9E2602136B006E3596 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21357F9D2602136B006E3596 /* SceneDelegate.swift */; };
-		21357FA02602136B006E3596 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21357F9F2602136B006E3596 /* ViewController.swift */; };
 		21357FA32602136B006E3596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21357FA12602136B006E3596 /* Main.storyboard */; };
 		21357FA62602136B006E3596 /* DragAndDrop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21357FA42602136B006E3596 /* DragAndDrop.xcdatamodeld */; };
 		21357FA82602136E006E3596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21357FA72602136E006E3596 /* Assets.xcassets */; };
 		21357FAB2602136E006E3596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21357FA92602136E006E3596 /* LaunchScreen.storyboard */; };
 		21357FB62602136F006E3596 /* DragAndDropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21357FB52602136F006E3596 /* DragAndDropTests.swift */; };
 		21357FC12602136F006E3596 /* DragAndDropUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21357FC02602136F006E3596 /* DragAndDropUITests.swift */; };
+		21357FDB2602141C006E3596 /* BoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21357FDA2602141C006E3596 /* BoardModel.swift */; };
+		21357FE626021511006E3596 /* KanbanCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21357FE526021511006E3596 /* KanbanCollectionViewController.swift */; };
+		21357FEC260215FE006E3596 /* KanbanCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21357FEB260215FE006E3596 /* KanbanCollectionViewCell.swift */; };
+		2193BEA52629A2D30068A9DF /* ListHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2193BEA42629A2D30068A9DF /* ListHeaderFooterView.swift */; };
+		2193BEAD2629A2EC0068A9DF /* ListHeaderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2193BEAC2629A2EC0068A9DF /* ListHeaderFooterView.xib */; };
+		21F7A090260458E20094F998 /* KanbanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F7A08E260458E20094F998 /* KanbanTableViewCell.swift */; };
+		21F7A091260458E20094F998 /* KanbanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21F7A08F260458E20094F998 /* KanbanTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +45,6 @@
 		21357F982602136B006E3596 /* DragAndDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragAndDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21357F9B2602136B006E3596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21357F9D2602136B006E3596 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		21357F9F2602136B006E3596 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		21357FA22602136B006E3596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21357FA52602136B006E3596 /* DragAndDrop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DragAndDrop.xcdatamodel; sourceTree = "<group>"; };
 		21357FA72602136E006E3596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +56,13 @@
 		21357FBC2602136F006E3596 /* DragAndDropUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragAndDropUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21357FC02602136F006E3596 /* DragAndDropUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDropUITests.swift; sourceTree = "<group>"; };
 		21357FC22602136F006E3596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21357FDA2602141C006E3596 /* BoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardModel.swift; sourceTree = "<group>"; };
+		21357FE526021511006E3596 /* KanbanCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanbanCollectionViewController.swift; sourceTree = "<group>"; };
+		21357FEB260215FE006E3596 /* KanbanCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanbanCollectionViewCell.swift; sourceTree = "<group>"; };
+		2193BEA42629A2D30068A9DF /* ListHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderFooterView.swift; sourceTree = "<group>"; };
+		2193BEAC2629A2EC0068A9DF /* ListHeaderFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListHeaderFooterView.xib; sourceTree = "<group>"; };
+		21F7A08E260458E20094F998 /* KanbanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanbanTableViewCell.swift; sourceTree = "<group>"; };
+		21F7A08F260458E20094F998 /* KanbanTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KanbanTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +113,13 @@
 		21357F9A2602136B006E3596 /* DragAndDrop */ = {
 			isa = PBXGroup;
 			children = (
+				21F7A08C260458AC0094F998 /* Custom */,
+				21357FD12602137B006E3596 /* Models */,
+				21357FD526021382006E3596 /* Controllers */,
+				21357FD92602138E006E3596 /* Storyboard */,
 				21357F9B2602136B006E3596 /* AppDelegate.swift */,
 				21357F9D2602136B006E3596 /* SceneDelegate.swift */,
-				21357F9F2602136B006E3596 /* ViewController.swift */,
-				21357FA12602136B006E3596 /* Main.storyboard */,
 				21357FA72602136E006E3596 /* Assets.xcassets */,
-				21357FA92602136E006E3596 /* LaunchScreen.storyboard */,
 				21357FAC2602136E006E3596 /* Info.plist */,
 				21357FA42602136B006E3596 /* DragAndDrop.xcdatamodeld */,
 			);
@@ -129,6 +142,67 @@
 				21357FC22602136F006E3596 /* Info.plist */,
 			);
 			path = DragAndDropUITests;
+			sourceTree = "<group>";
+		};
+		21357FD12602137B006E3596 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				21357FDA2602141C006E3596 /* BoardModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		21357FD526021382006E3596 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				21357FEA260215BC006E3596 /* Cell */,
+				21357FE526021511006E3596 /* KanbanCollectionViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		21357FD92602138E006E3596 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				21357FA12602136B006E3596 /* Main.storyboard */,
+				21357FA92602136E006E3596 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		21357FEA260215BC006E3596 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				21357FEB260215FE006E3596 /* KanbanCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2193BEA32629A29D0068A9DF /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				2193BEA42629A2D30068A9DF /* ListHeaderFooterView.swift */,
+				2193BEAC2629A2EC0068A9DF /* ListHeaderFooterView.xib */,
+			);
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		21F7A08C260458AC0094F998 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				2193BEA32629A29D0068A9DF /* HeaderView */,
+				21F7A08D260458BA0094F998 /* Cells */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		21F7A08D260458BA0094F998 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				21F7A08E260458E20094F998 /* KanbanTableViewCell.swift */,
+				21F7A08F260458E20094F998 /* KanbanTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +310,8 @@
 			files = (
 				21357FAB2602136E006E3596 /* LaunchScreen.storyboard in Resources */,
 				21357FA82602136E006E3596 /* Assets.xcassets in Resources */,
+				21F7A091260458E20094F998 /* KanbanTableViewCell.xib in Resources */,
+				2193BEAD2629A2EC0068A9DF /* ListHeaderFooterView.xib in Resources */,
 				21357FA32602136B006E3596 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,10 +337,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21357FA02602136B006E3596 /* ViewController.swift in Sources */,
 				21357F9C2602136B006E3596 /* AppDelegate.swift in Sources */,
+				21F7A090260458E20094F998 /* KanbanTableViewCell.swift in Sources */,
 				21357FA62602136B006E3596 /* DragAndDrop.xcdatamodeld in Sources */,
+				21357FE626021511006E3596 /* KanbanCollectionViewController.swift in Sources */,
+				2193BEA52629A2D30068A9DF /* ListHeaderFooterView.swift in Sources */,
+				21357FDB2602141C006E3596 /* BoardModel.swift in Sources */,
 				21357F9E2602136B006E3596 /* SceneDelegate.swift in Sources */,
+				21357FEC260215FE006E3596 /* KanbanCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
